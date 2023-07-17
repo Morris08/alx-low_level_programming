@@ -7,27 +7,19 @@
 
 int main(void)
 {
-    char current_char = '0';
+	char current_char = '0';
 
-    // Print numbers from '0' to '9'
-    while (current_char <= '9')
-    {
-        putchar(current_char);
-        current_char++;
-    }
+	while (current_char <= '9')
+		putchar(current_char);
+	current_char++;
 
-    current_char = 'a';
+	current_char = 'a';
 
-    // Print lowercase letters from 'a' to 'f'
-    while (current_char <= 'f')
-    {
-        putchar(current_char);
-        current_char++;
-    }
+	while (current_char <= 'f')
+		putchar(current_char);
+	current_char++;
 
-    // Print a newline character
-    putchar('\n');
+putchar('\n');
 
-    return 0;
+return (0);
 }
-
