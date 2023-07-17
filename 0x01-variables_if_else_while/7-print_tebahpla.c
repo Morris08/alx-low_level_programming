@@ -9,8 +9,8 @@ int main(void)
 
 	char current_char = 'z';
 {
-	while (current_char <= 'z')
-		putchar(current_char++);
+	while (current_char <= 'a')
+		putchar(current_char--);
 }
 
 	putchar('\n');
