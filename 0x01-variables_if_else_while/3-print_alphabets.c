@@ -13,12 +13,12 @@ int main(void)
 		putchar(current_char++);
 }
 
-        current_char = 'A';
+current_char = 'A';
 {
-        while (current_char <= 'Z')
-	        putchar(current_char++);
-}	
-	putchar('\n');
+	while (current_char <= 'Z')
+		putchar(current_char++);
+}
+putchar('\n');
 
 return (0);
 }
