@@ -6,23 +6,12 @@
  */
 int main(void)
 {
-    // Print the alphabet from 'a' to 'm'
-    char current_char = 'a';
-    while (current_char <= 'm') {
-        putchar(current_char);
-        current_char++;
-    }
 
-    // Print the alphabet from 'n' to 'z'
-    current_char = 'n';
-    while (current_char <= 'z') {
-        putchar(current_char);
-        current_char++;
-    }
+	char c;
 
-    // Print a newline character
-    putchar('\n');
+	for (c = 'a'; c <= 'z'; c++)
+		putchar(c);
+		putchar('\n');
 
-    return 0;
+return (0);
 }
-
