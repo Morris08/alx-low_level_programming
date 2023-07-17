@@ -9,6 +9,7 @@ int main(void)
 {
 	int i = 0;
 	int j;
+
 	while (i < 100)
 	{
 	j = i + 1;
