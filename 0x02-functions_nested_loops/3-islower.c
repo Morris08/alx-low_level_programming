@@ -11,13 +11,13 @@
 
 int _islower(int c)
 {
-	p = 'c';
+	c = 'c';
 
-	if (p == 'c')
+	if (c == 'c')
 	{
 	_putchar(1);
 	}
-	if (p != 'c')
+	if (c != 'c')
 	{
 	_putchar(0);
 	}
