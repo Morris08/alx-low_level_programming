@@ -17,7 +17,7 @@ int _islower(int c)
 	{
 	_putchar (1);
 	}
-	else (c != 'c')
+	else
 	{
 	_putchar (0);
 	}
