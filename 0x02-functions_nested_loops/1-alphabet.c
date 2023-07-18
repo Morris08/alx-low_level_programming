@@ -2,18 +2,18 @@
 #include <stdio.h>
 
 /**
- * void print_alphabet(void) - Entry point
+ * print_alphabet- Entry point
  *
  * Return: Always 0 (Success)
- *
- * print_alphabet: prints alphabets
  */
 
 void print_alphabet(void)
 {
 	int i;
 
-	while (i = 'a', i < 'z', i++)
-	_putchar(i++)
+	for (i = 'a'; i < 'z'; i++)
+	_putchar(i);
+
+	_putchar('\n');
 return (0);
 }
