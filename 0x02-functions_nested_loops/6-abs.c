@@ -1,11 +1,12 @@
 #include "main.h"
 /**
  * _abs- absolute
+ *
+ * Returns: positive
  */
 
 int _abs(int)
 {
 	int abs(int x);
-
-	_putchar(x);
+return (0);
 }
