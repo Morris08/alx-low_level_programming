@@ -19,7 +19,7 @@ int _islower(int c)
 	}
 	if (c != 'c')
 	{
-	_putchar (0);
+	_putchar (o);
 	}
 	_putchar('\n');
 return (0);
