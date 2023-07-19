@@ -7,8 +7,8 @@
 
 int add(int x, int y)
 {
-	x = 30;
-	y = 10;
+	x = 89;
+	y = 9;
 
 	_putchar (x + y);
 return (0);
