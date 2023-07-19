@@ -5,7 +5,7 @@
  * Return: Always 0 (Success)
  */ 
 
-int add(int, int)
+int add(int x, int y)
 {
 	x = 30;
 	y = 10;
