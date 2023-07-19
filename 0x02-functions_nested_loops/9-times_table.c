@@ -8,6 +8,7 @@
 void times_table(void)
 {
 	int row, column, product;
+	int count = 0;
 
 	for (row = 0; row <= 9; row++)
 	{
@@ -19,16 +20,19 @@ void times_table(void)
 	{
 	_putchar (' ');
 	_putchar (product + '0');
+	count += 2;
 	}
 	else
 	{
 	_putchar ((product / 10) + '0');
 	_putchar ((product % 10) + '0');
+	count += 3;
 	}
 	if (column != 9)
 	{
 	_putchar (',');
 	_putchar (' ');
+	count += 2;
 	}
 	}
 	_putchar ('\n');
