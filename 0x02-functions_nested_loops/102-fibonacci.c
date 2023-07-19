@@ -12,6 +12,7 @@
 void fibonacci(int n)
 {
 	int first = 0, second = 1, next;
+	int i;
 
 	printf("First %d Fibonacci numbers:\n", n);
 	printf("%d, %d", first, second);
