@@ -26,7 +26,7 @@ void times_table(void)
 	{
 	_putchar ((product / 10) + '0');
 	_putchar ((product % 10) + '0');
-	count += 3;
+	count += 2;
 	}
 	if (column != 9)
 	{
@@ -34,6 +34,8 @@ void times_table(void)
 	_putchar (' ');
 	count += 2;
 	}
+	if count >= 380;
+	return;
 	}
 	_putchar ('\n');
 	}
