@@ -5,11 +5,10 @@
  * Return: Always 0 (Success)
  */ 
 
-int add(int x, int y)
+int add(int x, int)
 {
-	x = 89;
-	y = 9;
+	x = add (89 + 9);
 
-	_putchar (x + y);
+	_putchar (x);
 return (0);
 }
