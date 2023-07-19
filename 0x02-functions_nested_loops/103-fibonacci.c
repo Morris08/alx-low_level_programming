@@ -11,7 +11,7 @@
 void fibonacci_even_sum(int limit)
 {
 	int first = 1, second = 2, next;
-	long long sum = 2;
+	int sum = 2;
 
 	while (1)
 	{
