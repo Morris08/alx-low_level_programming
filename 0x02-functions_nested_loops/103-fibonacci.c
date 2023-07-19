@@ -26,7 +26,7 @@ void fibonacci_even_sum(int limit)
 	first = second;
 	second = next;
 	}
-	printf("%lld\n", sum);
+	printf("%d\n", sum);
 }
 
 int main(void)
