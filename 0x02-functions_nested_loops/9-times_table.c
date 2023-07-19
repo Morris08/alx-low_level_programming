@@ -34,7 +34,7 @@ void times_table(void)
 	_putchar (' ');
 	count += 2;
 	}
-	if count >= 380;
+	if (count >= 380);
 	return;
 	}
 	_putchar ('\n');
