@@ -4,8 +4,8 @@
  *
  * Return: Addition
  *
- * @x- number 
- * @y- number
+ * @x: number
+ * @y: number
  */
 
 int add(int x, int y)
