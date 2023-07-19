@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  *
- * fibonacci: numbers
+ * fibonacci: function for numbers
  *
  * @n: number of fibonacci
  *
