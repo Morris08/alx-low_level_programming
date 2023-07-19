@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  *
- * fibonacci - numbers
+ * fibonacci: numbers
  *
  * @n: number of fibonacci
  *
@@ -13,9 +13,6 @@ void fibonacci(int n)
 {
 	int first = 0, second = 1, next;
 	int i;
-
-	printf("First %d Fibonacci numbers:\n", n);
-	printf("%d, %d", first, second);
 
 	for (i = 2; i < n; i++)
 	{
