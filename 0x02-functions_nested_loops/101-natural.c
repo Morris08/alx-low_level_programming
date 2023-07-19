@@ -5,7 +5,7 @@
  * Return: Always 0 (Success)
  */
 
-int main()
+int main(void)
 {
 	int number;
 	int limit = 1024;
@@ -19,5 +19,5 @@ int main()
 	}
 	}
 	printf("%d\n", sum);
-return 0;
+return (0);
 }
