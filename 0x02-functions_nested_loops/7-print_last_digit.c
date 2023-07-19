@@ -2,7 +2,7 @@
 /**
  * print_last_digit- Entry point
  *
- *number: inputs the number
+ *@number: inputs the number
  *
  * Return: last value digit
  */
@@ -18,7 +18,7 @@ int print_last_digit(int number)
 	_putchar (-1 + 48);
 	return (-last_digit);
 	}
-	else 
+	else
 	{
 	_putchar (1 + 48);
 	return (last_digit);
