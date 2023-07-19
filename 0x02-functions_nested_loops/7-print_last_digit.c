@@ -2,25 +2,25 @@
 /**
  * print_last_digit- Entry point
  *
- *@number: inputs the number
+ *@n: inputs the number
  *
  * Return: last value digit
  */
 
 int print_last_digit(int number)
 {
-	int last_digit;
+	int n;
 
-	last_digit = number % 10;
+	n = number % 10;
 
-	if (last_digit < 0)
+	if (n < 0)
 	{
 	_putchar (-1 + 48);
-	return (-last_digit);
+	return (-n);
 	}
 	else
 	{
 	_putchar (1 + 48);
-	return (last_digit);
+	return (n);
 	}
 }
