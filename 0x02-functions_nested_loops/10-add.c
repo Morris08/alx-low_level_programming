@@ -2,8 +2,11 @@
 /**
  * add- add numbers
  *
- * Return: Always 0 (Success)
- */ 
+ * Return: Addition
+ *
+ * @x- number 
+ * @y- number
+ */
 
 int add(int x, int y)
 {
