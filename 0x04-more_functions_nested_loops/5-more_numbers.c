@@ -10,7 +10,10 @@ void more_numbers(void)
 	{
 	for (c = 0; c <= 14; c++)
 	{
-	_putchar ('0' + c);
+	if (j > 9)
+	{
+	_putchar (j / 10 + 48);
+	_putchar (j % 10 + 48);
 	}
 	_putchar ('\n');
 	}
