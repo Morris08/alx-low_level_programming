@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * int_strlen - prints size
+ * _strlen - prints size
  *
  * @s: string
  *
