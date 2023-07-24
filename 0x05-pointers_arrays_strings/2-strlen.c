@@ -4,10 +4,10 @@
  *
  * @s: string
  *
- * return: always 0
+ * return: always length of string s
  */
 
-void int _strlen(char *s)
+int _strlen(char *s)
 {
 	int len = 0;
 
