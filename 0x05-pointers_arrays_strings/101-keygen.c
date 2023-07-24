@@ -12,8 +12,11 @@ char generate_random_char()
 
 void generate_password(char *password, int length)
 {
-    for (int i = 0; i < length; i++) {
+	int i = 0;
+
+    while (i < length) {
         password[i] = generate_random_char();
+	i++;
     }
     password[length] = '\0';
 }
