@@ -9,8 +9,12 @@
 
 void int _strlen(char *s)
 {
-	int s;
+	int len = 0;
 
-	_putchar ("%lu bytes\n", sizeof(s));
-return;
+	while (*s != '\0')
+	{
+	s++;
+	len++;
+	}
+	return (len);
 }
