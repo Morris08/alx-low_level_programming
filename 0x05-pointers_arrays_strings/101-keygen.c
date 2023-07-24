@@ -1,29 +1,25 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
-char generate_random_char()
-{
+#define MAX_PASSWORD_LENGTH 10
+
+char generate_random_char() {
     const char valid_chars[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
     int random_index = rand() % (sizeof(valid_chars) - 1);
     return valid_chars[random_index];
 }
 
-void generate_password(char *password, int length)
-{
-	int i = 0;
 
-    while (i < length) {
-        password[i] = generate_random_char();
-	i++;
+void generate_password(char *password) {
+    while (*password != '\0') {
+        *password = generate_random_char();
+        password++;
     }
-    password[length] = '\0';
 }
 
-int main()
-{
-
+int main() {
+    char password[MAX_PASSWORD_LENGTH + 1];
 
     srand((unsigned int)time(NULL));
 
