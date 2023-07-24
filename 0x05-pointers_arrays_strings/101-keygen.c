@@ -23,13 +23,11 @@ void generate_password(char *password, int length)
 
 int main()
 {
-    const int password_length = 10;
-    char password[password_length + 1];
 
 
     srand((unsigned int)time(NULL));
 
-    generate_password(password, password_length);
+    generate_password(password);
     printf("Random Password: %s\n", password);
 
     return 0;
