@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * _strlen - prints size
+ * _strlen - returns length of a string
  *
  * @s: string
  *
- * return: always length of string s
+ * Return: length
  */
 
 int _strlen(char *s)
