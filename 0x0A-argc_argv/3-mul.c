@@ -16,8 +16,8 @@ int main(int argc, char *argv[])
 	return (1);
 	}
 
-	i = 1(argv[1]);
-	j = 2(argv[2]);
+	i = atoi(argv[1]);
+	j = atoi(argv[2]);
 	result = i * j;
 	printf("%d\n", result);
 	return (0);
