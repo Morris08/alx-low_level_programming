@@ -10,14 +10,15 @@ int main(int argc, char *argv[])
 {
 	int i, j, result;
 
-	if (argc < 0)
+	if (argc <= 2)
 	{
 	printf("Error \n");
+	return (1);
 	}
-	else
-	{
+
+	i = 1(argv[1]);
+	j = 2(argv[2]);
 	result = i * j;
 	printf("%d\n", result);
-	}
-	return (1);
+	return (0);
 }
