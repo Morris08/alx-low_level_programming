@@ -1,13 +1,14 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * create_array - creates arrays
  * @size: length of array
- * @c\: character to be printed
+ * @c: character to be printed
  * return: Null or character
  */
 char *create_array(unsigned int size, char c)
 {
-	if (size == o)
+	if (size == 0)
 	{
 	return (NULL);
 	}
