@@ -8,6 +8,7 @@
 char *_strdup(char *str)
 {
 	int i, j;
+	char *duplicate;
 
 	if (str == NULL)
 	{
@@ -17,7 +18,7 @@ char *_strdup(char *str)
 	while (str[i] != '\0')
 	i++;
 
-	char *duplicate = malloc(i * sizeof(str));
+	duplicate = malloc(i * sizeof(str));
 
 	if (duplicate == NULL)
 	{
