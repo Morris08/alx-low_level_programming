@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stddef.h>
 /**
  * create_array - creates arrays
  * @size: length of array
