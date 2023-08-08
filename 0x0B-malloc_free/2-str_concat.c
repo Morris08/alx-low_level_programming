@@ -41,6 +41,6 @@ char *str_concat(char *s1, char *s2)
 	duplicate[i] = s2[j];
 	i++, j++;
 	}
-	duplicatep[i] = '\0';
+	duplicate[i] = '\0';
 	return (duplicate);
 }
