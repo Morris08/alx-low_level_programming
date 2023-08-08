@@ -5,7 +5,7 @@
  * *create_array - creates arrays
  * @size: length of array
  * @c: character to be printed
- * return: Null or character
+ * Return: Null or character
  */
 char *create_array(unsigned int size, char c)
 {
@@ -17,7 +17,7 @@ char *create_array(unsigned int size, char c)
 	return (NULL);
 	}
 	arr = malloc(size * sizeof(char));
-	if ( arr == NULL)
+	if (arr == NULL)
 	{
 	return (NULL);
 	}
