@@ -1,5 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include "main.h"
+
 /**
  * *malloc_checked - check process
  * @b: integer
@@ -13,8 +15,7 @@ void *malloc_checked(unsigned int b)
 	ptr = malloc(b);
 
 	if (p == NULL)
-	{
 	exit(98);
-	}
+
 	return (ptr);
 }
