@@ -1,7 +1,9 @@
-#ifndef HEADER_FILE
-#define HEADER_FILE
+#ifndef MAIN_H
+#define MAIN_H
 
 #include <stdlib.h>
+#include <stdio.h>
+#include <limits.h>
 
 void _putchar(char *c);
 void *malloc_checked(unsigned int b);
