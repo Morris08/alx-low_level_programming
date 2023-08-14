@@ -1,48 +1,46 @@
-#include "main.h"
 #include <stdlib.h>
-
+#include <main.h>
 /**
- * *_realloc - realloc
- * @ptr: pointer
- * @old_size: old size
- * @new_size: new size
- * Return: NULL or pointer
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	char *ptr1;
-	char *old_ptr;
-	unsigned int j;
+	unsigned char *j;
+	unsigned char *i;
 
 	if (new_size == old_size)
 	return (ptr);
-
-	if (new_size == 0 && ptr)
+	if (new_size == 0 && ptr != NULL)
 	{
-	free (ptr);
+	free(ptr);
 	return (NULL);
 	}
-
-	if (!ptr)
-	return (malloc(new_size));
-	ptr1 = malloc(new_size);
-
-	if (!ptr1)
-	return (NULL);
-
-	old_ptr = ptr;
-
-	if (new_size < old_size)
+	if (ptr == NULL)
 	{
-	for (j = 0; j < new_size; j++)
-	ptr[j] = old_ptr[j];
+	ptr = malloc(new_size * sizeof(void *));
+	if (ptr == NULL)
+	return (NULL);
+	return (ptr);
 	}
+	j = malloc(new_size * sizeof(char));
+	if (j == NULL)
+	return (NULL);
+	i = 0;
 
 	if (new_size > old_size)
 	{
-	for (j = 0; j < old_size; j++)
-	ptr[j] = old_ptr[j];
+	while (i < old_size)
+	{
+	j[i] = ((char *) ptr)[i];
+	i++;
 	}
-	free (ptr);
-	return (ptr1);
+	free(ptr);
+	return (j);
+	}
+	while (i < new_size)
+	{
+	j[i] = ((char *)ptr)[i];
+	i++;
+	}
+	free(ptr);
+	return (j);
 }
