@@ -10,10 +10,10 @@ void p_char(va_list list)
 	printf("%c", va_arg(list, int));
 }
 /**
- * p_strings - prints strings
+ * p_string - prints strings
  * @list: arg
  */
-void p_strings(va_list list)
+void p_string(va_list list)
 {
 	char *str;
 
