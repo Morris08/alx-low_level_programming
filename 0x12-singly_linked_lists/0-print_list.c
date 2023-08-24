@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stddef.h>
 #include "lists.h"
-
+#include <stdlib.h>
 /**
  * print_list - print lists
  * @h: list to be
