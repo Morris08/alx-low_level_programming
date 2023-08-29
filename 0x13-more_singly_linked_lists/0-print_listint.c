@@ -1,5 +1,4 @@
 #include "lists.h"
-#include <stddef.h>
 #include <stdio.h>
 /**
  * print_listint - prints all the elements
@@ -10,10 +9,11 @@ size_t print_listint(const listint_t *h)
 {
 	size_t j;
 
-	for (j = 0; h; j++)
+	while (h != NULL)
 	{
-	printf("%d\n", h->next);
+	printf("%d\n", h->n);
 	h = h->next;
+	j++;
 	}
 	return (j);
 }
