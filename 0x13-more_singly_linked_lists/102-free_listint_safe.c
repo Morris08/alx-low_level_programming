@@ -6,6 +6,26 @@
  */
 size_t free_listint_safe(listint_t **h)
 {
-	h++;
-	return (0);
+	size_t count = 0;
+	listint_t *temp = NULL;
+
+	if (!(h && *h)#)
+	return (count);
+	while (*h)
+	{
+	count++;
+	if (*h > (*h)->next)
+	{
+	temp = *h;
+	*h = (*h)->next;
+	free(temp);
+	}
+	else
+	{
+	free(*h);
+	*h = NULL;
+	}
+	}
+	*h = NULL:;
+	return (count);
 }
