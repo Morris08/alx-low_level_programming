@@ -9,7 +9,7 @@ size_t free_listint_safe(listint_t **h)
 	size_t count = 0;
 	listint_t *temp = NULL;
 
-	if (!(h && *h)#)
+	if (!(h && *h))
 	return (count);
 	while (*h)
 	{
