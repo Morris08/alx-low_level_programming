@@ -7,7 +7,6 @@
  */
 size_t print_listint_safe(const listint_t *head)
 {
-	size_t nodes = 0;
 	const listint_t *one = head, *two = head;
 
 	if (head == NULL)
@@ -17,7 +16,7 @@ size_t print_listint_safe(const listint_t *head)
 	{
 	one = one->next;
 	two = two->next->next;
-	nodes++;
+	head++;
 	}
 	head = NULL;
 	return (nodes);
