@@ -10,7 +10,7 @@ int is_palindrome(char *s)
 	int length;
 
 	length = _strlen_recursion(s);
-	if (len == 0 || *s != s[len - 1])
+	if (length == 0 || *s != s[length - 1])
 	return (0);
-	return (is_palind_recursive(s, 0, len - 1));
+	return (is_palindrome(s, 0, length - 1));
 }
