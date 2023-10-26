@@ -1,5 +1,4 @@
 #include "main.h"
-#include "math.h"
 /**
  *sqtRecursive - square root
  *@start: initial number
