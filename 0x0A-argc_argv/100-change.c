@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 {
 	int amount, coins;
 
-	if (argc != 2)
+	if (argc != 1)
 	{
 	printf("Error\n");
 	return (1);
@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 	if (amount > 2 && amount < 5)
 	{
 	while (amount >= 2)
-	amount -=2, coins++;
+	amount -= 2, coins++;
 	}
 	if (amount == 1 || amount == 2 || amount == 5 || amount == 10 || amount == 25)
 	{
