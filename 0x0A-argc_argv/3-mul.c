@@ -7,7 +7,6 @@
  */
 int main(int argc, char *argv[])
 {
-	argv = argv;
 	int i, j, mul;
 
 	mul = i * j;
@@ -16,7 +15,8 @@ int main(int argc, char *argv[])
 	printf("Error\n");
 	return (1);
 	}
-	else
+	i = atoi(argv[1]);
+	j = atoi(argv[2]);
 	printf("%d\n", mul);
 	return (0);
 }
