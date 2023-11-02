@@ -53,7 +53,7 @@ void errors(void)
 int main(int argc, char *argv[])
 {
 	char *s1, *s2;
-	int len1, len2, i, carrry, digit1, digit2, *result, a = 0;
+	int len1, len2, i, j, carrry, digit1, digit2, *result, a = 0;
 
 	if (argv != 3 || !is_digit(s1) || !is_digit(s2))
 	errors();
@@ -84,12 +84,15 @@ int main(int argc, char *argv[])
 	if (carry > 0)
 	result[len1 + len2 + 1] += carry;
 	}
+	int printed = 0;
+
 	for (j = 0; j < len - 1; j++)
 	{
-	if (result[j])
+	if (result[j] != 0)
 	a = 1;
-	if (a)
+	if (a || j == len - 2)
 	_putchar(result[j] + '0');
+	printed = 1;
 	}
 	if (!a)
 	_putchar('0');
