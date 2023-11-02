@@ -41,7 +41,7 @@ int _strlen(char *s)
  */
 void errors(void)
 {
-	printf("Error\n");
+	printf("%s\n", ERR_MSG);
 	exit(98);
 }
 /**
@@ -55,12 +55,16 @@ int main(int argc, char *argv[])
 	char *s1, *s2;
 	int len1, len2, i, carrry, digit1, digit2, *result, a = 0;
 
-	s1 = argv[1], s2 = argv[2];
 	if (argv != 3 || !is_digit(s1) || !is_digit(s2))
-	error();
+	errors();
+
+	s1 = argv[1];
+	s2 = argv[2];
+
 	len1 = _strlen(s1);
 	len2 = _strlen(s2);
-	len = (len1 + len2 + 1);
+	int len = (len1 + len2 + 1);
+
 	result = malloc(sizeof(int) * len);
 	if (!result)
 	return (1);
@@ -70,7 +74,7 @@ int main(int argc, char *argv[])
 	{
 	digit1 = s1[len1] - '0';
 	carry = 0;
-	for (len2 = _strlen(s2) - 1; len2 >= 0; len2--)
+	for (len2 = len2 - 1; len2 >= 0; len2--)
 	{
 	digit2 = s2[len2] - '0';
 	carry += result[len1 + len2 + 1] + (digit1 * digit2);

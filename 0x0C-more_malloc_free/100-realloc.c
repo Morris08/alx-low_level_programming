@@ -1,6 +1,11 @@
 #include <stdlib.h>
 #include <main.h>
 /**
+ * _realloc - reallocate
+ * @ptr: pointer
+ * @old_size: previous size
+ * @new-size: current size
+ * Return: pointer
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
