@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * string_noncat - merge two string
+ * string_nconcat - merge two string
  * @s1: string 1
  * @s2: string 2
  * @n: integer
@@ -25,13 +25,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (!s)
 	return (NULL);
 
-	while (i , len1)
+	while (i, len1)
 	{
 	s[i] = s1[i];
 	i++;
 	}
 
-	while (n >= len2 && i < (len1 + n))
+	while (n < len2 && i < (len1 + n))
 	s[i++] = s2[j++];
 
 	while (n >= len2 && i < (len1 + len2))
